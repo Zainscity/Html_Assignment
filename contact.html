@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Logo</title>
+</head>
+<body>
+
+  <div style="background-color: #333; overflow: hidden; padding: 10px 20px; display: flex; align-items: center;">
+    <!-- Company Logo -->
+    <a href="index.html" style="margin-right: 20px;">
+      <img src="logo.png" alt="Company Logo" style="height: 40px;">
+    </a>
+
+    <!-- Navigation Links -->
+    <a href="index.html" style="color: white; text-decoration: none; padding: 14px 20px;">Home</a>
+    <a href="about.html" style="color: white; text-decoration: none; padding: 14px 20px;">About</a>
+    <a href="portfolio.html" style="color: white; text-decoration: none; padding: 14px 20px;">Portfolio</a>
+    <a href="contact.html" style="color: white; text-decoration: none; padding: 14px 20px;">Contact</a>
+  </div>
+
+  <table align="center" height="100%" width="100%">
+    <tr>
+      <td align="center" valign="middle">
+
+        <table width="500">
+          <tr>
+            <td align="center">
+
+              <h2>Your Details</h2>
+
+              <form action="/submit_contact_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+              <hr>
+
+              <!-- Review Section -->
+              <h2>Review Us</h2>
+              <p>We value your feedback! Please take a moment to let us know about your experience.</p>
+
+              <form action="/submit_review" method="post">
+                <label for="rating">How did you hear about us?</label>
+                <select id="rating" name="rating">
+                  <option value="excellent">Google</option>
+                  <option value="good">Facebook</option>
+                  <option value="average">Instagram</option>
+                  <option value="poor">others</option>
+                </select><br><br>
+
+                 <p>Would you like to visit again?</p>
+                  <label for="Yes">
+                  <input type="checkbox" id="visit-again" name="visit-again">
+                  Yes               
+                  </label>
+                  <label for="No">
+                    <input type="checkbox" id="no-visit-again" name="no-visit-again">
+                      No                    
+                      <label for="Maybe">
+                      <input type="checkbox" id="maybe" name="maybe">
+                      Maybe               
+                      </label></label><br><br>
+                      <label for="characteristics">Characteristics:</label><br><b>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                     <label for="Yes"> <input type="checkbox" value="Sign me up for email updates">Sign me up for email updates </label><br>
+                <input type="submit" value="Submit Review">
+              </form>
+
+              <hr>
+
+              <!-- Location Section -->
+              <h2>Our Location</h2>
+              <p>Find us at our office location below:</p>
+
+              <!-- Google Maps Embed -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.380799040433!2d67.02598069999999!3d24.850840599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e75a28531d1%3A0x412558657f5ff4a8!2sGovernor%20House%20Karachi!5e0!3m2!1sen!2s!4v1730445418937!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  
+<footer style="position:fixed ; bottom: 0; width: 100%; text-align: center; padding: 5px; background-color: #333; color: white;">
+  &copy; 2024 Zainscity. All rights reserved.
+</footer>
+</body>
+</html>
